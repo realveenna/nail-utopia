@@ -15,4 +15,6 @@ Nail Utopia is a PHP-based e-commerce website developed as part of a web develop
 - MySQL
 - Bootstrap
 - JavaScript
-- PHPMailer
+- PHPMailer (removed)
+- Mailtrap
+

@@ -174,3 +174,5 @@ https://dev.to/askyt/get-all-selected-values-of-a-multiple-select-field-in-js-5g
 https://codepen.io/gmkhussain/pen/ozwwPw
 //  trigger change manually from chatgpt
 element.parentElement.dispatchEvent(new Event('change')); 
+
+// text content in guidelines, terms and privacy are from chatgpt

@@ -6,7 +6,7 @@
         $userEmail = $_POST["userEmail"];
 
         // Prepare the SQL statement with a placeholder
-        $statement = $DB->prepare("SELECT * FROM userLogin WHERE email = :email");
+        $statement = $DB->prepare("SELECT * FROM userlogin WHERE email = :email");
 
         // Bind the userEmail to the placeholder
         $statement->bindParam(':email', $userEmail, PDO::PARAM_STR);
@@ -24,7 +24,7 @@
         $userRole = $_POST['btnAddEmployee'];
         
         // Update statement
-        $statement = $DB->prepare("UPDATE userLogin SET user_type = :userRole WHERE email = :email");
+        $statement = $DB->prepare("UPDATE userlogin SET user_type = :userRole WHERE email = :email");
         
         $statement->bindParam(':userRole', $userRole, PDO::PARAM_STR);
         $statement->bindParam(':email', $userEmail, PDO::PARAM_STR);

@@ -258,44 +258,6 @@
                 });
 
             });
-            function generateStrongPassword(){
-                const lower = "abcdefghijklmnopqrstuvwxyz";
-                const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                const num = "0123456789";
-                const special = "!@#$%^&£";
-                const passLength = 16;
-
-                let pass = "";
-                let allChars = "";
-                
-                while (allChars.length <= passLength){
-                    for (let i = 0; i < 3; i++) {
-                        const randLower = Math.floor(Math.random() * lower.length);
-                        const randUpper = Math.floor(Math.random() * upper.length);
-                        const randNum = Math.floor(Math.random() * num.length);
-                        const randSpecial = Math.floor(Math.random() * special.length);
-
-                        allChars += lower[randLower];
-                        allChars += upper[randUpper];
-                        allChars += num[randNum];
-                        allChars += special[randSpecial];
-                    }
-                }
-                
-
-                for (let i = 0; i < passLength; i++) {
-                    const randPass = Math.floor(Math.random() * allChars.length);
-
-                    pass += allChars[randPass];
-                    if (((i + 1) % 4 === 0 && i !== passLength - 1)){
-                         pass += "-";
-                    }
-
-                }
-                password.value = pass;
-            }
-
-
         </script>
     </body>
 </html>

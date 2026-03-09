@@ -3,7 +3,11 @@
     session_start();
     require_once '../connect.php';  
     require_once './php/test_input.php';
-        
+
+    if(!isset($_SESSION['loginAttempt'] )){
+        $_SESSION['loginAttempt'] = 0;
+    }
+    
     // Define error message variables and set to empty values
     $emailLoginErr = $passLoginErr = "";
     $loginEmail = $rawLoginPass = "";
@@ -57,6 +61,7 @@
                         if($isRegistered) {
                             $user = $statement->fetch();
                             $_SESSION['user'] = $user;
+                            $_SESSION['loginAttempt'] = 0;
 
                             if($_SESSION["userType"]  === "admin" || $_SESSION["userType"]  === "staff" ) {
                                 header('Location: ../admin/'); 
@@ -71,6 +76,13 @@
                     // Password is incorrect
                     else{
                         $passLoginErr = 'Incorrect password.';
+                        $_SESSION['loginAttempt'] ++;
+                        if($_SESSION['loginAttempt'] >= 3){
+                            $passLoginErr = " <br>Having trouble logging in? Reset password <a href='resetPassword.php'>here</a>";
+                        }
+                         if($_SESSION['loginAttempt'] > 20){
+                            $passLoginErr = " You have failed several attempts. You have been blocked from sigining in.";
+                        }
                     }
                 }
                 // Email is not found
@@ -120,7 +132,8 @@
                                 <h6 class="error"><?php echo $passLoginErr;?></h6>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary" name="login">Login</button>
+                                <button type="submit" class="btn btn-primary" name="login"
+                                <?php if($_SESSION['loginAttempt'] >= 6) echo "disabled"; ?>>Login</button>
                             </div>
                             <small>Don't have an account? <a href="register.php">Register</a></small>
                         </form>

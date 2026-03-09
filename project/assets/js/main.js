@@ -17,6 +17,46 @@ document.querySelectorAll('.toggle-password').forEach(toggle => {
   });
 });
 
+// generate password
+function generateStrongPassword(){
+  const lower = "abcdefghijklmnopqrstuvwxyz";
+  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const num = "0123456789";
+  const special = "!@#$%^&£";
+  const passLength = 11;
+
+  let pass = "";
+  let allChars = "";
+  
+  while (allChars.length <= passLength){
+      for (let i = 0; i < 3; i++) {
+          const randLower = Math.floor(Math.random() * lower.length);
+          const randUpper = Math.floor(Math.random() * upper.length);
+          const randNum = Math.floor(Math.random() * num.length);
+
+          allChars += lower[randLower];
+          allChars += upper[randUpper];
+          allChars += num[randNum];
+      }
+  }
+  
+  const randSpecial = Math.floor(Math.random() * special.length);
+  const specialChar = special[randSpecial];
+
+
+  for (let i = 0; i < passLength; i++) {
+      const randPass = Math.floor(Math.random() * allChars.length);
+
+      pass += allChars[randPass];
+      if (((i + 1) % 4 === 0 && i !== passLength - 1)){
+            pass += "-";
+      }
+  }
+  pass += specialChar;
+
+  password.value = pass;
+}
+
 
 //// Admin script
 
