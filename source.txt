@@ -1,0 +1,176 @@
+// 2d array and display
+https://www.w3schools.com/php/php_arrays_multidimensional.asp
+
+// multiple images
+https://www.geeksforgeeks.org/php/how-to-upload-multiple-images-and-text-to-mysql-database-in-php/
+
+//svg attributes
+<a href="https://www.flaticon.com/free-icons/high-quality" title="high quality icons">High quality icons created by Wahyu.Setyanto - Flaticon</a>
+
+//scrollbar
+https://stackoverflow.com/questions/44334106/how-can-i-style-horizontal-scrollbar-by-css
+
+// cookie recently viewed products in array
+https://stackoverflow.com/questions/9657490/how-to-put-a-cookie-into-an-array
+
+//images
+https://unsplash.com/photos/a-womans-hands-on-a-table-with-a-vase-of-flowers-OUFeR03izWA
+https://images.unsplash.com/photo-1637264718120-e70224dc0662?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+https://images.unsplash.com/photo-1667242196587-33f541537cc6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+//toggle
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+//onload
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+//image database
+https://www.w3schools.com/php/php_file_upload.asp
+//multiple images
+https://www.geeksforgeeks.org/php/how-to-upload-multiple-images-and-text-to-mysql-database-in-php/
+
+
+//preview image
+https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded#
+
+//preview multiple
+https://www.aspsnippets.com/Articles/918/HTML5-Show-Display-multiple-image-preview-before-upload-with-FileUpload-control-using-JavaScript-and-jQuery/
+
+//CONVERT array TO STRING
+https://www.geeksforgeeks.org/php/how-to-convert-array-to-string-in-php/
+
+//thumbs swiper
+https://stackoverflow.com/questions/60733116/how-to-make-swiper-js-slider-thumbs-gallery-display-as-block-instead-of-inline
+https://codesandbox.io/p/sandbox/swiper-thumbs-gallery-loop-2qkt9?file=%2Findex.html%3A121%2C8
+
+//dom content load
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+/A client-side JavaScript function that sends form data asynchronously to a server-side PHP script using XMLHttpRequest and updates the DOM without reloading the page.
+https://medium.com/@python-javascript-php-html-css/php-data-delivery-to-javascript-avoiding-browser-display-9aa374690f9e
+
+// box shadow
+https://getcssscan.com/css-box-shadow-examples
+
+//check php image
+https://forum.freecodecamp.org/t/check-if-file-is-of-type-image-php/231619
+
+// id value to lower and spaces to dash
+https://stackoverflow.com/questions/28977793/convert-spaces-to-dash-and-lowercase-with-php
+
+// join
+https://stackoverflow.com/questions/27294830/basic-join-tables-and-foreign-keys
+https://www.w3schools.com/sql/sql_join.asp
+
+//key array group
+https://gist.github.com/mcaskill/baaee44487653e1afc0d
+
+//star rating
+https://dev.to/vaibhavbshete/star-rating-input-using-html-css-45jj
+
+//text overflow
+https://www.geeksforgeeks.org/css/how-to-apply-an-ellipsis-to-multiline-text-in-css/
+
+// php json_decode
+https://www.w3schools.com/js/js_json_php.asp
+
+// select json from mysql
+https://dev.mysql.com/doc/refman/8.4/en/json-search-functions.html
+
+// counter
+https://codepen.io/Rajesh-Pal-the-scripter/pen/QWzEWjG
+
+// data attributes
+https://css-tricks.com/a-complete-guide-to-data-attributes/
+
+// filter for tag and color
+https://stackoverflow.com/questions/36249828/how-to-search-json-array-in-mysql
+https://dev.mysql.com/doc/refman/8.0/en/json-search-functions.html
+https://chatgpt.com/ (couldn't find source code for selecting db using array)
+
+// string and numbers
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Strings
+// decimal
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+// substring
+https://www.daniweb.com/programming/web-development/threads/486670/how-to-show-only-3-word-from-string
+// to upper
+https://www.w3schools.com/php/func_string_strtoupper.asp
+// get first and last index of array
+https://www.geeksforgeeks.org/php/get-the-first-last-item-from-an-array-in-php/
+
+// pagination
+https://www.geeksforgeeks.org/php/php-pagination-set-2/
+https://stackoverflow.com/questions/2616697/php-mysql-pagination
+https://getbootstrap.com/docs/5.3/components/pagination/
+and a lot of help with https://chatgpt.com/ especially preserving param when changing page
+URLSearchParams for js ajax no reload but more complex
+http_build_query() is better for php
+
+
+
+//array
+to int https://www.php.net/manual/en/function.intval.php
+
+
+// localstorage cookie
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+https://stackoverflow.com/questions/16010827/html5-localstorage-checking-if-a-key-exists
+
+// country list
+https://gist.github.com/djaiss/2938259
+
+// leading zero
+https://www.geeksforgeeks.org/php/format-a-number-with-leading-zeros-in-php/
+
+
+// pass js variables to php
+https://www.quora.com/How-do-I-pass-a-JavaScript-variable-to-an-external-php
+
+// format php decimal
+https://www.naukri.com/code360/library/php-numberformat-function
+
+
+// graph 
+https://canvasjs.com/php-charts/responsive-chart/
+https://forums.phpfreaks.com/topic/235565-monthly-totals/
+
+
+//send mail
+https://www.mailersend.com/blog/php-send-email only 2 unique email limit
+https://app.mailersend.com/dashboard no email actually sent
+
+
+// ON DUPLICATE
+https://stackoverflow.com/questions/14383503/on-duplicate-key-update-same-as-insert
+
+// password
+https://www.geeksforgeeks.org/javascript/how-to-generate-a-random-password-using-javascript/
+https://www.geeksforgeeks.org/dsa/check-large-number-divisible-4-not/
+
+// Modal event
+https://www.geeksforgeeks.org/bootstrap/bootstrap-5-modal-events/
+
+// sum total products order counter
+https://stackoverflow.com/questions/34654322/sql-php-show-top-3-most-sold-products-from-database
+
+
+//timestamp
+https://www.w3schools.com/php/phptryit.asp?filename=tryphp_date9
+// date format
+https://www.php.net/manual/en/function.date.php
+// add days to date
+https://www.geeksforgeeks.org/php/how-to-add-days-to-date-in-php/
+// check if date is in between two dates
+https://stackoverflow.com/questions/19070116/php-check-if-date-between-two-dates
+
+// new line inside placeholder &#10;
+https://stackoverflow.com/questions/7312623/insert-line-break-inside-placeholder-attribute-of-a-textarea
+
+// multi select 
+https://dev.to/askyt/get-all-selected-values-of-a-multiple-select-field-in-js-5g16
+// no hold control
+https://codepen.io/gmkhussain/pen/ozwwPw
+//  trigger change manually from chatgpt
+element.parentElement.dispatchEvent(new Event('change')); 

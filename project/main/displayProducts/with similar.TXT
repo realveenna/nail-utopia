@@ -1,0 +1,77 @@
+<!-- class second and Default -->
+both canvas
+displayDB
+REVIEWS ! TO BE CHANGE ANYWAY
+
+  $defimage = json_decode($rs['prod_default_image']);
+    if($defimage){
+        echo '<img src="' . $defimage . '" alt="' .$rs['prod_name']. '" class="default">>';
+    }
+
+    $second_image = json_decode($rs['prod_image'],true);
+    if (!empty($second_image)) {
+        echo '<img src="' . $second_image[0] . '" alt="' . $rs['prod_name'] . '" class="second">';
+    }
+
+
+<!-- TO BE ADDED -->
+ add href above to link to single prod or something
+
+ <!-- notes on post get ajax -->
+  <!DOCTYPE html> 
+  
+  <html> 
+    <body> 
+        <div id="demo"> 
+        <h1>The XMLHttpRequest Object
+
+        </h1> 
+        <button type="button" onclick="loadDoc()">Change Content
+
+        </button> 
+
+        <input type="text" id="username" placeholder="Enter name">
+<button type="button" onclick="sendData()">Send</button>
+
+<div id="result"></div>
+
+
+    </div> 
+  <script> 
+  function loadDoc() 
+{
+    var xhttp = new XMLHttpRequest();   // Create request object
+    xhttp.onreadystatechange = ...     // Define response handler
+    xhttp.open("GET", "ajax_info.txt", true); // Configure request
+    xhttp.send();  
+}
+  </script> 
+</body> 
+  </html>
+
+  <script>
+function sendData() {
+    var name = document.getElementById("username").value;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("result").innerHTML =
+                this.responseText;
+        }
+    };
+
+    xhttp.open("POST", "process.php", true);
+    xhttp.setRequestHeader(
+        "Content-type",
+        "application/x-www-form-urlencoded"
+    );
+
+    xhttp.send("name=" + encodeURIComponent(name));
+}
+</script>
+
+
+<!-- //workin -->
+
+https://medium.com/@python-javascript-php-html-css/php-data-delivery-to-javascript-avoiding-browser-display-9aa374690f9e

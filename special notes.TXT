@@ -1,0 +1,281 @@
+<!-- 🚀 Bootstrap 5 Utility Cheat Sheet -->
+<!-- DEFAULT MUST HAVES -->
+; DEFAULT CONTAINER is container-lg
+; DEFAULT GAP is g-2 
+; EVERY container-lg must have py-3
+; PRIMARY BUTTON must have btn-primary w-auto
+; SECONDARY BUTTON must have btn-light w-auto
+; ALWAYS INCLUDE ONT TOP OF PHP HTML
+;     session_start();
+;     include '../connect.php';
+
+/////DISPLAY JSCON ARRAW IMAGESSSSS
+$imgs = json_decode($row['default_image'], true);
+
+if (is_array($imgs)) {
+    $src = $imgs[0];
+} else {
+    $src = $imgs; // fallback if it was JSON string
+}
+
+echo '<img src="'.htmlspecialchars($src).'" alt="'.htmlspecialchars($row['alt']).'">';
+
+NO RESULT
+    echo '<h5 class="text-center text-danger"> No result Found!</h5>';
+
+2 BUTTONS MAX Width 
+                <div class="gap-2 d-flex">
+                    <button type="submit" class="btn btn-primary mb-3 w-100" name="btnAddCart"
+                        value="btnAddCart">Add to Cart</button>
+                     <button type="submit" class="btn btn-primary mb-3 w-100" name="btnAddCart"
+                        value="btnAddCart">Add to Cart</button>
+                </div>
+
+
+
+DATE CONVERT
+$dateRaw = $rs['upload_date'];
+$date = date('M-d-Y', strtotime($dateRaw)); 
+
+; php if statement inside html
+;     <?php if (!empty($success)): ?>
+;     <?php endif; ?>
+
+; <!--Success Alert Message -->
+; <div class="container-lg alertTop">
+;     <div class="alert alert-success alert-dismissible fade show " id="myAlert" role="alert">
+;         <h6 class="success"><?php echo $success;?></h6>
+;         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+;     </div>  
+; </div>
+
+!!!!!!!!!!! displaying products row
+                        echo '<div class="row g-2 gy-4">';
+                            foreach another php '<div class="my-card col-6 col-sm-4 col-lg-3">';
+
+CONTAINER WITH GAP
+  <section class="secondary">
+    <div class="container-lg py-3 py-md-5"> !!!!!!dont forget
+        <div class="row gy-3 gy-md-4"> !!dont forget!!
+        optional!!
+         <div class="d-flex flex-column gap-3"> !!!!!ooptional
+            <h2 class="m-0">User Information: </h2>
+            <div>
+                <p class="capitalize">Name: <?php echo $user['fname']; echo ' '; echo $user['lname'];?></p>
+                <p>Email Address: <?php echo $user['email'];?></p>
+                <p>Birthday: <?php echo $user['birthday'];?> </p>
+                <p>Date registered is: <?php echo $user['date_registered'];?></p>
+            </div>
+            <a href="logout.php">
+                <button type="button" class="btn btn-primary w-100">Logout</button>
+            </a>
+        </div>
+
+        end optional
+
+        
+            <div class="col-12">
+                <div class="text-center">
+                <h2>Shop by Collection</h2> 
+                <h4>This is a subheading</h4>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- List Shop by Collection -->
+                <?php include './displayProducts/collection.php';?>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- 📦 Containers -->
+container    <!-- fixed width -->
+container-sm
+container-md
+container-lg
+container-xl
+container-xxl
+container-fluid <!-- full width -->
+
+
+<!-- 📐 Spacing (Margin & Padding) -->
+
+Padding
+p-0 → p-5    <!-- all sides -->
+pt-0 → pt-5   <!-- top -->
+pb-0 → pb-5   <!-- bottom -->
+ps-0 → ps-5   <!-- start (left) -->
+pe-0 → pe-5   <!-- end (right) -->
+px-0 → px-5   <!-- left + right -->
+py-0 → py-5   <!-- top + bottom -->
+
+
+<!-- Margin -->
+m-0 → m-5
+mt-0 → mt-5
+mb-0 → mb-5
+ms-0 → ms-5
+me-0 → me-5
+mx-0 → mx-5
+my-0 → my-5
+
+
+<!-- Auto margins (alignment magic ✨) -->
+ms-auto  <!-- push right -->
+me-auto  <!-- push left -->
+mx-auto  <!-- center horizontally -->
+
+
+<!-- 🧱 Display -->
+d-none
+d-block
+d-inline
+d-inline-block
+d-flex
+d-inline-flex
+
+
+<!-- Responsive: -->
+d-none d-md-block
+d-flex d-lg-none
+
+
+<!-- 🧩 Flex Direction -->
+flex-row
+flex-row-reverse
+flex-column
+flex-column-reverse
+
+
+<!-- 🎯 Justify Content (main axis) -->
+justify-content-start
+justify-content-end
+justify-content-center
+justify-content-between
+justify-content-around
+justify-content-evenly
+
+
+<!-- 📏 Align Items (cross axis) -->
+align-items-start
+align-items-end
+align-items-center
+align-items-baseline
+align-items-stretch
+
+
+<!-- 🧲 Align Self -->
+align-self-start
+align-self-center
+align-self-end
+
+
+<!-- 🔀 Flex Wrap -->
+flex-wrap
+flex-nowrap
+flex-wrap-reverse
+
+
+<!-- 🧵 Gap (flex & grid) -->
+gap-0 → gap-5
+row-gap-0 → row-gap-5
+column-gap-0 → column-gap-5
+
+
+Example:
+<div class="d-flex gap-3">
+
+
+<!-- 📊 Grid System -->
+row
+col
+col-6
+col-md-4
+col-lg-3
+
+
+Equal columns:
+row-cols-2
+row-cols-md-3
+row-cols-lg-4
+
+
+<!-- 📍 Position -->
+position-relative
+position-absolute
+position-fixed
+position-sticky
+top-0
+bottom-0
+start-0
+end-0
+
+
+<!-- 🎨 Text & Alignment -->
+text-start
+text-center
+text-end
+text-uppercase
+text-lowercase
+text-capitalize
+fw-light
+fw-normal
+fw-bold
+
+
+<!-- 📐 Width & Height -->
+w-25
+w-50
+w-75
+w-100
+h-25
+h-50
+h-75
+h-100
+
+
+<!-- 🧼 Overflow -->
+overflow-hidden
+overflow-auto
+overflow-scroll
+
+
+<!-- 🔲 Borders & Radius -->
+border
+border-0
+border-top
+border-bottom
+rounded
+rounded-circle
+rounded-pill
+
+
+<!-- 🔘 Buttons -->
+btn
+btn-primary
+btn-outline-dark
+btn-sm
+btn-lg
+w-100
+
+
+<!-- ⚡ Common Layout Combos (🔥 USE THESE) -->
+
+<!-- Center content -->
+<div class="d-flex justify-content-center align-items-center">
+
+<!-- Space-between navbar -->
+<div class="d-flex justify-content-between align-items-center">
+
+<!-- Push item right -->
+<div class="d-flex">
+<div>Left</div>
+<div class="ms-auto">Right</div>
+</div>
+
+<!-- Vertical stack with spacing -->
+<div class="d-flex flex-column gap-3">
+
+

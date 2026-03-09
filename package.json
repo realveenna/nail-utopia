@@ -1,0 +1,15 @@
+{
+  "name": "nail-utopia-new",
+  "version": "1.0.0",
+  "description": "as",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "node -v",
+  "scripts": {
+    "test": "npm -v"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

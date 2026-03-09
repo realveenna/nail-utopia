@@ -1,0 +1,61 @@
+// Override Bootstrap theme colors to match 
+$primary:   #3A2D28;
+$secondary: #99877B;
+$light:     #FFFDFA;
+$dark:      #7A4A2E;
+
+// $primary:   #99877B;
+// $secondary: #7A4A2E;
+// $success:   #3A2D28;
+// $light:     #FFFDFA;
+// $dark:      #3A2D28;
+
+
+// Import Bootstrap AFTER overrides
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+// .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm{
+    // padding-right: 0;
+    // padding-left: 0;
+// }
+
+
+
+.card-header{
+    background-color: var(--secondary);
+}
+.card-footer{
+    background: none;
+}
+.btn-light {
+  border: .5px solid var(--main) !important;
+}
+.btn-light:hover{
+    background: var(--secondary);
+}
+
+/* Checked Button Style*/
+.btn-check + .btn-outline-primary{
+    border-color: var(--secondary);
+    color: var(--main);
+}
+.btn-check:hover + .btn-outline-primary{
+    border-color: var(--main);
+    color: var(--dark-accent);
+}
+.btn-check:checked + .btn-outline-primary{
+    border-color: var(--main);
+    color: var(--dark-accent);
+    background-color: var(--secondary);
+}
+.btn-outline-primary{
+    border-radius: 16px;
+    --bs-btn-padding-y: .15rem;
+}
+.btn-primary {
+  color: $light;
+}
+.btn-check + .btn-radio{
+    border-radius: 3px ;
+    --bs-btn-padding-x: .5rem;
+    min-width: 40px;
+}
